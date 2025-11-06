@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.seller-header {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.seller-header > div:first-child {
+  font-size: 30px;
+  font-weight: bold;
+  color: blue;
+}
+
+.seller-header ul {
+  list-style-type: none;
+}
+
+.seller-header ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.sellerinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.sinfo-title {
+  justify-self: center;
+  color: rgb(69, 68, 68);
+}
+
+.sinfo-image {
+  max-width: 100%;
+  width: 100%;
+}
+
+.sellerinfo-specify {
+  height: 200px;
+}
+
+.sellerinfo-specify ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+}
+.sellerinfo-specify ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 30px;
+}
+
+/*Stories-info*/
+
+.stories-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stories-info h2 {
+  font-size: 40px;
+  color: rgb(69, 68, 68);
+}
+
+.stories-info h2 span {
+  color: rgb(2, 124, 213);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.245);
+}
+
+.stories-info > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.stories-info-person {
+  margin: 5px;
+  padding: 10px;
+  align-content: center;
+  background-color: rgba(127, 255, 212, 0.1);
+}
+
+.stories-info-person h3 {
+  color: rgb(54, 53, 53);
+  line-height: 4;
+}
+.stories-info-person p {
+  text-indent: 50px;
+  line-height: 1.5;
+}
+
+/*seller Accounts Info*/
+
+.sellerAccountsInfo {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  grid-template-areas:
+    "list description"
+    "list description";
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.sellerAccountsInfoList {
+  margin-top: 10px;
+  grid-area: list;
+  position: sticky;
+  top: 80px;
+  bottom: 100px;
+}
+
+.sellerAccountsInfoList ul {
+  list-style-type: none;
+  width: 300px;
+}
+.sellerAccountsInfoList ul li {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+
+.sellerAccountsInfoList ul li a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(56, 53, 53);
+  font-weight: 500;
+}
+
+.sellerAccountsInfoList ul li a:hover {
+  color: rgb(2, 124, 213);
+  margin-left: 10px;
+  padding: 8px;
+  font-size: large;
+}
+
+.sellerAccountsInfoList ul li:first-child {
+  border: 2px solid rgb(2, 124, 213);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sellerAccountsInfoList ul li:first-child > a {
+  display: block;
+  color: rgb(2, 124, 213);
+  font-size: 1.8rem;
+}
+
+.sellerAccountsInfoDescription {
+  margin-top: 10px;
+  padding: 10px;
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.sellerAccountsInfoDescription h2 {
+  color: rgb(56, 53, 53);
+  font-size: 1.8rem;
+}
+
+.sellerAccountsInfoDescription h2 > div {
+  margin: 25px 0px;
+  border: 3px solid rgb(2, 124, 213);
+  width: 50px;
+  height: 5px;
+  border-radius: 15px;
+}
+.createAccountClass p {
+  line-height: 2.2;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.createAccountClass span {
+  display: block;
+
+  padding: 5px 20px;
+  color: rgb(56, 53, 53);
+}
+
+.createAccountGst {
+  margin: 30px 20px;
+  padding: 10px 20px;
+  border: 1px solid rgba(56, 53, 53, 0.356);
+  border-radius: 10px;
+  width: 100%;
+  display: grid;
+  background-color: rgba(240, 248, 255, 0.555);
+}
+
+.createAccountGst h3 {
+  margin: 10px 0px;
+}
+
+.createAccountGst p {
+  margin: 10px 0px;
+  color: rgba(44, 43, 43, 0.952);
+}
+
+.createAccountGst ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.createAccountGst img {
+  display: block;
+}
+.createAccountGst p {
+  text-align: justify;
+}
+
+.productCategories {
+  padding: 25px;
+  background-color: rgba(240, 248, 255, 0.329);
+  border: 1px solid rgba(128, 128, 128, 0.288);
+  box-shadow: rgba(2, 124, 213, 0.16) 0px 0px 12px;
+  border-radius: 10px;
+}
+
+.productCategories h3 {
+  margin-bottom: 30px;
+  color: rgb(32, 31, 31);
+}
+
+.productCategoriesList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 35px;
+}
+
+/*Seller Footer Styling*/
+
+.sellerFooter {
+  padding: 10px;
+  background-color: rgba(22, 21, 21, 0.795);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: whitesmoke;
+}
+
+.footerItem {
+  display: flex;
+  gap: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(245, 245, 245, 0.17);
+}
+
+.footerItemWrapper div {
+  margin-top: 20px;
+}
+
+.footerItemSocial {
+  display: flex;
+  gap: 100px;
+  justify-content: space-evenly;
+  align-items: start;
+  padding-bottom: 30px;
+}
+
+.footerItemSocial div {
+  margin-top: 20px;
+}
+.footerSocialMedia img {
+  width: 40px;
+  padding-left: 10px;
+}
+
+.foooterCopyRights {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 50px;
+}
+
+.foooterCopyRights div {
+  color: rgb(32, 31, 31);
+}
+
+.foooterCopyRights img {
+  width: 220px;
+  height: auto;
+}
+
+.foooterCopyRights div a {
+  text-decoration: none;
+  color: rgb(32, 31, 31);
+}

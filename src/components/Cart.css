@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/*Cart Header Styling*/
+.cartHeader {
+  margin: 3px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 2px 2px rgba(207, 205, 205, 0.205);
+}
+
+@media all and (max-width: 600px) {
+  .cartHeader {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cartHeader input {
+    width: 10px;
+    height: 40px;
+  }
+}
+
+.cartHeader img {
+  width: 250px;
+  height: auto;
+}
+
+.cartHeaderSearch {
+  border: 1px solid rgb(2, 124, 213);
+  border-radius: 8px;
+  box-shadow: 1px 1px rgba(128, 128, 128, 0.616);
+}
+
+.cartHeaderSearch form {
+  display: flex;
+}
+
+.cartHeader input {
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+}
+.cartHeader input[type="text"] {
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.cartHeader button {
+  display: inline-block;
+  font-size: 13px;
+  width: 60px;
+  height: 40px;
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+  background-color: rgb(255, 255, 255);
+}
+.cartHeader button:hover {
+  color: rgb(255, 255, 255);
+  background: rgba(2, 125, 213, 0.836);
+}
+
+.cartHeaderLoginLogout {
+  text-align: center;
+  border-radius: 2px;
+}
+.cartHeaderLoginLogout a {
+  text-decoration: none;
+  padding: 8px 35px;
+  background-color: rgba(2, 125, 213, 0.836);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.cartHeaderLoginLogout a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgba(2, 125, 213, 0.836);
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*Cart Body Styling*/
+
+.cartBody {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartBody > div {
+  width: 1100px;
+  height: 600px;
+  border: 1px solid rgba(128, 128, 128, 0.301);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.082);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartBody > div img {
+  width: 300px;
+  height: auto;
+}
+
+.cartBodyItem div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: rgb(56, 53, 53);
+}
+
+.cartItems {
+  font-weight: 500;
+}
+
+.cartBodyItem button {
+  padding: 8px 50px;
+  background-color: #fb641b;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cartBodyItem button:hover {
+  color: #fb641b;
+  background-color: white;
+  box-shadow: 0 0 10px 2px rgba(128, 128, 128, 0.812);
+}
+
+/*Cart Footer Styling*/
+
+.cartFooter {
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.cartFooteritem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.policy span {
+  padding-right: 5px;
+}
+.policy a {
+  padding-right: 5px;
+  text-decoration: none;
+  color: rgb(56, 53, 53);
+}
+
+.cartHelp span {
+  padding-right: 5px;
+}
+
+.cartHelp a {
+  padding-right: 5px;
+  text-decoration: none;
+  color: rgb(4, 109, 184);
+}
